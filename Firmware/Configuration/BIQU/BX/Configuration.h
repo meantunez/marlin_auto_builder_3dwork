@@ -23,8 +23,8 @@
 
 #define CONFIG_EXAMPLES_DIR "config/examples/BIQU/BX"
 
-//#define MOTHERBOARD BOARD_BTT_SKR_SE_BX_V3 // Uncomment for the V3.0 board, otherwise V2.0 is assumed
-//#define BX_ALL_METAL_HOTEND // Uncomment for newer H2 extruder with all metal heatbreak
+#define MOTHERBOARD BOARD_BTT_SKR_SE_BX_V3 // Uncomment for the V3.0 board, otherwise V2.0 is assumed
+#define BX_ALL_METAL_HOTEND // Uncomment for newer H2 extruder with all metal heatbreak
 
 /**
  * Configuration.h
@@ -92,8 +92,8 @@
 // @section machine
 
 // Choose the name from boards.h that matches your setup
-#ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_SE_BX_V2
+//#ifndef MOTHERBOARD
+  //#define MOTHERBOARD BOARD_BTT_SKR_SE_BX_V2
 #endif
 
 /**
@@ -1240,9 +1240,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          1150    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   1100    // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk limits (mm/s)
